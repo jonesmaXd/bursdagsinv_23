@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+    justify-content: center;
+    color: white;
+}
+
+body {
+    background-color: #282D35;
+    margin: 0;
+}
+
+.headlineText {
+    text-align: center;
+
+}
+
+.destBox {
+    padding-top: 100px;
+    width: 1000px;
+    justify-content: center;
+}
+
+#map {
+    margin-left: 5px;
+    width: 375px;
+    height: 375px;
+    margin-bottom: 50px;
+    border-radius: 4px;
+    box-shadow: 5px 5px 3px #aaaaaa;
+}
+
+.destLines {
+    width: 100%;
+    margin: 10px;
+}
+
+.center {
+    position: center;
+    align-content: center;
+    justify-content: center;
+    max-width: 370px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.rakkerpic {
+    max-width: 370px;
+    max-height: 500px;
+    justify-content: center;
+}
+
+.rakkersection {
+    display: inline-block;
+
+    justify-content: center;
+    align-content: center;
+}
+
+.rakkerText {
+    text-align: center;
+    color: white;
+    margin: 0 10px 0 10px;
+}

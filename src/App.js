@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Map from "./components/map";
+import PictureCard from "./components/pictureCard";
+import Bakkis from "./pictures/baggis.jpg"
+import Brian from "./pictures/brian.jpg"
+import Gad from "./pictures/gad.jpg"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="">
+        <h1 className={"headlineText"}>HEI ESSETRYNE!!!</h1>
+        <PictureCard name={"Bakis"} img={Bakkis} description={"Også kjent som Gayis"}  />
+        <Map />
     </div>
   );
 }
