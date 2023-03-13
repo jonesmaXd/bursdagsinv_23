@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import {RAKKERS} from "../constants/rakkers";
-import PictureSection from "./PictureSection";
 import PictureCard from "./PictureCard";
 
 export default function PictureSection2() {

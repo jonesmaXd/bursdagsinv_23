@@ -8,12 +8,12 @@ import React from "react";
  */
 export default function PictureCard(props) {
     return(
-        <article className={"center"} >
+        <div className={"picturecard"} >
             <section className={"rakkersection"}>
                 <h2 className={"rakkerText"}>{props.name}</h2>
                 <img src={props.img} className="rakkerpic"  alt={"picture of rakker"}/>
                 <h2 className={"rakkerText"}>{props.description}</h2>
             </section>
-        </article>
+        </div>
     )
 }

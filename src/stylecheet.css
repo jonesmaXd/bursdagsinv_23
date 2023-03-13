@@ -40,7 +40,16 @@ body {
     margin-right: auto;
     margin-left: auto;
 }
+.picturecard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ /* Adjust as needed */
+}
 
+.picturecard > * {
+    margin: auto;
+}
 .rakkerpic {
     max-width: 370px;
     max-height: 500px;

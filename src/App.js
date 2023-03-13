@@ -4,7 +4,7 @@ import PictureCard from "./components/PictureCard";
 import Bakkis from "./pictures/baggis.jpg"
 import Brian from "./pictures/brian.jpg"
 import Gad from "./pictures/gad.jpg"
-import PictureSection from "./components/PictureSection";
+
 import PictureSection2 from "./components/PictureSection2";
 
 
