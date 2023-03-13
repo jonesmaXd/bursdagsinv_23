@@ -1,15 +1,17 @@
 import React from "react";
-import Map from "./components/map";
-import PictureCard from "./components/pictureCard";
+import Map from "./components/Map";
+import PictureCard from "./components/PictureCard";
 import Bakkis from "./pictures/baggis.jpg"
 import Brian from "./pictures/brian.jpg"
 import Gad from "./pictures/gad.jpg"
+import PictureSection from "./components/PictureSection";
+
 
 function App() {
   return (
-    <div className="">
+    <div className="container">
         <h1 className={"headlineText"}>HEI ESSETRYNE!!!</h1>
-        <PictureCard name={"Bakis"} img={Bakkis} description={"Også kjent som Gayis"}  />
+        <PictureSection />
         <Map />
     </div>
   );

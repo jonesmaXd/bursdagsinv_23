@@ -4,6 +4,10 @@
     color: white;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 body {
     background-color: #282D35;
     margin: 0;
@@ -16,7 +20,6 @@ body {
 
 .destBox {
     padding-top: 100px;
-    width: 1000px;
     justify-content: center;
 }
 
@@ -27,11 +30,6 @@ body {
     margin-bottom: 50px;
     border-radius: 4px;
     box-shadow: 5px 5px 3px #aaaaaa;
-}
-
-.destLines {
-    width: 100%;
-    margin: 10px;
 }
 
 .center {
