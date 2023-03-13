@@ -5,13 +5,14 @@ import Bakkis from "./pictures/baggis.jpg"
 import Brian from "./pictures/brian.jpg"
 import Gad from "./pictures/gad.jpg"
 import PictureSection from "./components/PictureSection";
+import PictureSection2 from "./components/PictureSection2";
 
 
 function App() {
   return (
     <div className="container">
         <h1 className={"headlineText"}>HEI ESSETRYNE!!!</h1>
-        <PictureSection />
+        <PictureSection2 />
         <Map />
     </div>
   );

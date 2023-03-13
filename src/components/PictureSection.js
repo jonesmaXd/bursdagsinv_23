@@ -5,53 +5,43 @@ import {useEffect, useState} from "react";
 
 export default function PictureSection() {
 
-    const rakkerList = [RAKKERS];
-
-    let currentRakkerCount = 0;
+    const rakkerList = RAKKERS;
 
     const [count, setCount] = useState(0);
 
+    function handleCount() {
+        if(count === rakkerList.length - 1) {
+            console.log(count)
+        } else {
+            setCount(count => count + 1);
+        }
+    }
+
     useEffect(() => {
         const interval = setInterval(() => {
-            setCount(count => count + 1);
+            handleCount()
+            console.log(count)
         }, 5000);
 
         return () => clearInterval(interval);
-    }, []);
+    }, [count]);
+
+    let rakkerOnDisplay = rakkerList[count]
 
     function displayRakkers() {
-        currentRakkerCount = count;
-        let rakkerOnDisplay = rakkerList[currentRakkerCount]
-
-        if (count === rakkerList.length) {
-            currentRakkerCount = 0;
-        }
-
-        console.log(currentRakkerCount)
-        console.log(rakkerOnDisplay[currentRakkerCount])
-        console.log()
-
 
         return (
             <div>
                 <PictureCard
-                    name={rakkerOnDisplay[currentRakkerCount].name}
-                    img={rakkerOnDisplay[currentRakkerCount].img}
-                    description={rakkerOnDisplay[currentRakkerCount].description}
-                    key={rakkerOnDisplay[currentRakkerCount].id}
+                    name={rakkerOnDisplay.name}
+                    img={rakkerOnDisplay.img}
+                    description={rakkerOnDisplay.description}
+                    key={rakkerOnDisplay.id}
                 />
             </div>
         )
     }
 
-    const rakkers = RAKKERS.map(rakker => (
-        <PictureCard
-            name={rakker.name}
-            img={rakker.img}
-            description={rakker.description}
-            key={rakker.id}
-        />
-    ))
 
 
     return (
