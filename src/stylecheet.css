@@ -15,6 +15,7 @@ body {
 
 .headlineText {
     text-align: center;
+    margin-bottom: 50px;
 }
 
 .destBox {
@@ -43,8 +44,8 @@ body {
 .center > * {
     margin: auto;
 }
+
 .rakkerpic {
-    z-index: 1;
     max-width: 370px;
     max-height: 500px;
     justify-content: center;
@@ -56,12 +57,19 @@ body {
     align-content: center;
 }
 
+.rakkerheadline {
+    text-align: center;
+    color: white;
+    margin: 0 10px 0 10px;
+    max-width: 300px;
+}
+
 .rakkerText {
     text-align: center;
     color: white;
     margin: 0 10px 0 10px;
+    max-width: 250px;
 }
-
 
 .fade-in {
     animation: fadeIn 1s;
@@ -91,13 +99,17 @@ body {
 }
 
 @keyframes moveTopAndRotate {
-    from {bottom: 0px; transform: rotate(0deg);}
-    to {bottom: 2000px; transform: rotate(359deg);}
+    from {bottom: 2000px; transform: rotate(0deg);}
+    to {bottom: 100px; transform: rotate(359deg);}
+}
+
+@keyframes rotate {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(359deg);}
 }
 
 #onClickImage {
     max-width: 390px;
-    max-height: 550px;
 }
 
 .moveToTopAndRotate {
@@ -108,4 +120,12 @@ body {
 .moveToRightFast {
     position: absolute;
     animation: moveRight 5s infinite;
+}
+
+#laughingemoji {
+    margin: 0px 0px 400px 200px;
+    max-width: 200px;
+    position: absolute;
+    animation: rotate infinite 0.5s;
+
 }

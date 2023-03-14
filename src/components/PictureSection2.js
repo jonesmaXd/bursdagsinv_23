@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import {RAKKERS} from "../constants/rakkers";
 import PictureCard from "./PictureCard";
+import laughingemoji from "../pictures/laughingEmoji.png"
 
 export default function PictureSection2() {
     const [rakkers, setRakkers] = useState(RAKKERS);
@@ -22,8 +23,9 @@ export default function PictureSection2() {
                 name={currentRakker.name}
                 img={currentRakker.img}
                 description={currentRakker.description}
-                key={currentRakker.id}
+                key={currentIndex}
             />
+
         </div>
     );
 }
