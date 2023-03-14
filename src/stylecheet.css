@@ -44,6 +44,7 @@ body {
     margin: auto;
 }
 .rakkerpic {
+    z-index: 1;
     max-width: 370px;
     max-height: 500px;
     justify-content: center;
@@ -67,16 +68,10 @@ body {
 }
 
 
-
 @keyframes fadeIn {
     0% { opacity: 0; }
     100% { opacity: 1; }
 
-}
-
-@keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
 }
 
 .elementToFadeInAndOut {
@@ -88,4 +83,29 @@ body {
 @keyframes fade {
     0%,100% { opacity: 0 }
     50% { opacity: 1 }
+}
+
+@keyframes moveRight {
+    from {left: 0px;}
+    to {left: 2000px;}
+}
+
+@keyframes moveTopAndRotate {
+    from {bottom: 0px; transform: rotate(0deg);}
+    to {bottom: 2000px; transform: rotate(359deg);}
+}
+
+#onClickImage {
+    max-width: 390px;
+    max-height: 550px;
+}
+
+.moveToTopAndRotate {
+    position: absolute;
+    animation: moveTopAndRotate 2s;
+}
+
+.moveToRightFast {
+    position: absolute;
+    animation: moveRight 5s infinite;
 }

@@ -15,19 +15,19 @@ export const RAKKERS = [
     "id": 2,
     "name" : "RØb",
     "img": Robert,
-    "description": "Gayis"
+    "description": ""
   },
   {
     "id": 3,
     "name" : "Gad",
     "img": Gad,
-    "description": "Gayis"
+    "description": ""
   },
   {
     "id": 4,
     "name" : "Jæn",
     "img": Jon,
-    "description": "Gayis"
+    "description": ""
   },
   {
     "id": 5,
