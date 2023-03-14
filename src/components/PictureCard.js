@@ -8,7 +8,7 @@ import React from "react";
  */
 export default function PictureCard(props) {
     return(
-        <div className={"picturecard"} >
+        <div className={"center"} >
             <section className={"elementToFadeInAndOut"}>
                 <h2 className={"rakkerText"}>{props.name}</h2>
                 <img src={props.img} className="rakkerpic"  alt={"picture of rakker"}/>
