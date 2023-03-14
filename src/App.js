@@ -6,24 +6,23 @@ import Brian from "./pictures/brian.jpg"
 import Gad from "./pictures/gad.jpg"
 import PictureSection2 from "./components/PictureSection2";
 import Mag from "./pictures/epicmag.jpg";
+import robAndJon from "./pictures/røbOgJønStryn.jpg"
+import Headline from "./components/Headline";
+import Footer from "./components/Footer";
 
-
-function renderMAG() {
-    return (
-        <div>
-            {console.log("test")}
-            <img src={Mag} className={""}  alt={"MAG"}/>
-        </div>
-    )
-}
 
 function App() {
   return (
     <div className="container">
-        <h1 className={"headlineText"}>HEI ESSETRYNE!!!</h1>
-        <h2 className={"headlineText"}>Jøn og Røb inviterer til tidenes bursdagsfeiring på REKDAL!</h2>
+        <Headline />
         <PictureSection2 />
+        <h1 className={"centerText"}>Du lurer kanske på: <br/><br/>
+            <strong>Hvor faen er rekdal?</strong>
+            <br/><br/>
+            <strong>↓Her er et kart↓</strong>
+        </h1>
         <Map />
+        <Footer/>
     </div>
   );
 }

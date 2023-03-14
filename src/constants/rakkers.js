@@ -11,6 +11,8 @@ import brian from "../pictures/brian.jpg"
 import oski from "../pictures/oskiTrøtt.jpg"
 import torvald from "../pictures/torvald.png"
 import seb from "../pictures/zeb.jpg"
+import mag from "../pictures/mæg.png"
+import laughingBlock from "../pictures/laughingBlock.png"
 
 export const RAKKERS = [
   {
@@ -21,7 +23,7 @@ export const RAKKERS = [
   {
     "name" : "RØb",
     "img": robert,
-    "description": ""
+    "description": "Utdannet Traktor og Kjelke-fører"
   },
   {
     "name" : "Jæn",
@@ -46,12 +48,12 @@ export const RAKKERS = [
   {
     "name" : "Johnny",
     "img": johny,
-    "description": ""
+    "description": "Nylig vært på horetur i Spania"
   },
   {
     "name" : "Håkan",
     "img": haakan,
-    "description": ""
+    "description": "Bulker på pølse og potetstappe smoothie"
   },
   {
     "name" : "Nizolai",
@@ -61,7 +63,7 @@ export const RAKKERS = [
   {
     "name" : "Dahle",
     "img": dahle,
-    "description": ""
+    "description": "Kjører bil med subway surfer i bakgrunnen"
   },
   {
     "name" : "Brian",
@@ -76,11 +78,21 @@ export const RAKKERS = [
   {
     "name" : "T(h)orvald",
     "img": torvald,
+    "description": "The Wolf of Åse"
+  },
+  {
+    "name" : "Mæg",
+    "img": mag,
+    "description": "Finnes han fortsatt?"
+  },
+  {
+    "name" : "Men hva faen jøn",
+    "img": Hakekors,
     "description": ""
   },
   {
     "name" : "",
-    "img": Hakekors,
+    "img": laughingBlock,
     "description": ""
   },
 ];

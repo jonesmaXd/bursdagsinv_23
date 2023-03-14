@@ -16,19 +16,19 @@ export default function PictureCard(props) {
         image.style.display = 'block';
     }
 
-
     return(
         <>
-            <div className={"center"} >
-                <section className={"elementToFadeInAndOut"}>
-                    <h2 className={"rakkerheadline"}>{props.name}</h2>
-                    <img src={props.img} onClick={showImage} className="rakkerpic"  alt={"picture of rakker"}/>
-                    <h2 className={"rakkerText"}>{props.description}</h2>
-                </section>
-                {props.name === "Seb" && <img id={"laughingemoji"} className={""} src={laughingemoji}/>}
-                <img src={Mag} id="onClickImage" className={"moveToTopAndRotate"} alt={"MAG"} style={{ display: 'none' }}/>
+            <div className={"rakkerContainer"}>
+                <div className={"center"} >
+                    <section className={"elementToFadeInAndOut"}>
+                        <h2 className={"rakkerheadline"}>{props.name}</h2>
+                        <img src={props.img} onClick={showImage} className="rakkerpic"  alt={"picture of rakker"}/>
+                        <h2 className={"rakkerText"}>{props.description}</h2>
+                    </section>
+                    {props.name === "Seb" && <img id={"laughingemoji"} className={"elementToFadeInAndOut"} src={laughingemoji}/>}
+                    <img src={Mag} id="onClickImage" className={"moveToTopAndRotate"} alt={"MAG"} style={{ display: 'none' }}/>
+                </div>
             </div>
-
         </>
     )
 }
