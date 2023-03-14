@@ -18,7 +18,7 @@ export const RAKKERS = [
   {
     "name" : "Maerten",
     "img": bakkis,
-    "description": "Alias: Gayis"
+    "description": "Kjent som: gayis, hårete faen, 2pac, who benches more"
   },
   {
     "name" : "RØb",
